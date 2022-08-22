@@ -1,2 +1,2 @@
 # Algorithm-Study
-Studying JavaScript algorithms and data structure
+Studying JavaScript algorithms and data structures
