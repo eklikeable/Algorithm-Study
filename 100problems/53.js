@@ -1,23 +1,17 @@
+// 💡 갯수가 같으면서, 항상 맨 앞은 "(" 맨 뒤는 ")" 이어야 함
+
 function checkParenthesis(string) {
-    const text = new String(string);
     let cntLeft = 0;
     let cntRight = 0;
 
-    if (text[0] !== '(' || text[text.length - 1] !== ')') {
+    if (string[0] !== '(' || string[string.length - 1] !== ')') {
         console.log('No');
     } else {
-        for (let i = 0; i < text.length; i++) {
-            if (text[i] === '(') {
-                cntLeft++;
-            } else {
-                cntRight++;
-            }
-        }
-        if (cntLeft === cntRight) {
-            console.log('YES');
-        } else {
-            console.log('NO');
+        for (let i = 0; i < string.length; i++) {
+            string[i] === '(' ? cntLeft++ : cntRight++;
         }
     }
+    cntLeft === cntRight ? console.log('YES') : console.log('NO');
 }
-checkParenthesis('()()()');
+
+checkParenthesis('())()()');
