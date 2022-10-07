@@ -21,11 +21,13 @@ function getWholeScores() {
         individualScore = [];
     }
 }
+
 getWholeScores();
 // console.log(student_score)
 
 // 2. 반 평균을 구하세요
 // 과목별 반 평균 이중배열 생성
+
 // class_score[반][과목]
 function getClassAverage() {
     for (let i = 0; i < 7; i++) {
@@ -45,11 +47,13 @@ function getClassAverage() {
         averages = [];
     }
 }
+
 getClassAverage();
 // console.log(class_score)
 
 // 3. 반 1등 점수를 구하세요
 // 반 1등의 과목별 점수 이중배열 생성
+
 function getTopStudentsScore() {
     for (let i = 0; i < 7; i++) {
         let indexOfTopStudentClass = 0;
@@ -74,11 +78,13 @@ function getTopStudentsScore() {
         );
     }
 }
+
 getTopStudentsScore();
 // console.log(topStudentsScore);
 
 // 4. 전교 평균을 구하세요
 // 과목별 전체평균 [국,영,수,사,과]
+
 function getWholeAverage() {
     for (let k = 0; k < 5; k++) {
         let subjectAverage = 0;
@@ -92,5 +98,6 @@ function getWholeAverage() {
         total_score.push(subjectAverage);
     }
 }
+
 getWholeAverage();
 // console.log(total_score)

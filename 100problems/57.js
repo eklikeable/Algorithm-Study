@@ -1,4 +1,5 @@
 /* let input = 1000;
+
 let cnt = 0;
 for (let i = 0; i <= input; i++) {
     let number = String([i]).split('');
