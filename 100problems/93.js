@@ -15,7 +15,7 @@ function replacePage(sizeOfMemory, pages) {
         }
         if (!queue.includes(j)) {
             cnt += 1;
-            queue.shift(queue[0]);
+            queue.shift();
             queue.push(j);
         }
     }
