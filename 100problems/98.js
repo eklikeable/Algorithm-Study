@@ -1,7 +1,7 @@
 function uniqueClothes(notes) {
     const numbers = [];
     const memo = notes.split(' ');
-    memo.filter((e) => {
+    for (let e of memo) {
         if (memo.indexOf(e) % 2 === 1) {
             for (let i of e) {
                 if (parseInt(i) * 1 === parseInt(i) && !numbers.includes(i)) {
@@ -9,7 +9,7 @@ function uniqueClothes(notes) {
                 }
             }
         }
-    });
+    }
     return console.log(numbers);
 }
 
