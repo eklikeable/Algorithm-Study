@@ -1,3 +1,10 @@
+/**
+ * 문제 97 : 택배 배달
+ * @param {number} number - 배달원 수
+ * @param {array} time - 쌓인 택배 별 배달시간(접수된 순서대로 배송)
+ * @return {number} 모든 택배가 배달 완료 될 시간
+ */
+
 function solution(number, time) {
     let deliveryMan = [];
     let cnt = 0;
